@@ -26,6 +26,7 @@ First Hidden Layer: This layer has 80 neurons and uses the ReLU activation funct
 Second Hidden Layer: This layer has 30 neurons and also uses the ReLU activation function.
 Output Layer: The output layer has 1 neuron and uses the sigmoid activation function.  The model is designed for binary classification tasks. The sigmoid activation function is commonly used for binary classification as it squashes the output into the range [0, 1], representing the probability of the positive class.
 I used binary_crossentropy for loss and adam for optimizer.
+<img width="647" alt="Screen Shot 2023-11-09 at 9 05 18 PM" src="https://github.com/leedthanh/deep-learning-challenge/assets/135544908/5d603ce0-584c-4e98-a530-74b041c0d996">
 
 The model produced an Accuracy: 0.7262973785400391 which is below the target performance of 75% accuracy that I hope to achieve.  Therefore I used an optimized model by changing the number of neuron and hidden layers to get my model target to 75%.  
 
