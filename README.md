@@ -25,8 +25,23 @@ I removed EIN and NAME because they are identification column
 First Hidden Layer: This layer has 80 neurons and uses the ReLU activation function. The ReLU activation function is a common choice for hidden layers as it helps the network learn complex patterns.
 Second Hidden Layer: This layer has 30 neurons and also uses the ReLU activation function.
 Output Layer: The output layer has 1 neuron and uses the sigmoid activation function.  The model is designed for binary classification tasks. The sigmoid activation function is commonly used for binary classification as it squashes the output into the range [0, 1], representing the probability of the positive class.
+I used binary_crossentropy for loss and adam for optimizer.
 
-The model produced an Accuracy: 0.7262973785400391 which is below the target performance of 75% accuracy that I hope to achieve.
+The model produced an Accuracy: 0.7262973785400391 which is below the target performance of 75% accuracy that I hope to achieve.  Therefore I used an optimized model by changing the number of neuron and hidden layers to get my model target to 75%.  
+
+## Step 3: Build an optimized model to improve accuracy rate
+
+I added another column feature NAME and increased another hidden layers to deepen the model neural network and as a result the optimized model produced an accuracy rate of 76% 
+Here are the details of the optimized model.
+First Hidden Layer: This layer has 30 neurons and uses the ReLU activation function. The ReLU activation function is a common choice for hidden layers as it helps the network learn complex patterns.
+Second Hidden Layer: This layer has 20 neurons and also uses the ReLU activation function.
+Third Hidden Layer:  This layer has 10 neurons and also uses the Relu activation function.
+Output Layer: The output layer has 1 neuron and uses the sigmoid activation function.  The model is designed for binary classification tasks. The sigmoid activation function is commonly used for binary classification as it squashes the output into the range [0, 1], representing the probability of the positive class.  
+I used binary_crossentropy for loss and adam for optimizer also 100 epoch.
+
+# Summary
+The model accurately predict 76% succesfull rate so I would recommend Alphabet Soup to use the model.  However, with more fine tunes the accuracy rate could improve with more hidden layers since deepen the network would help increase the accuracy.
+
 
 
 
