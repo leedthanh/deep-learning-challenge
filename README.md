@@ -23,21 +23,37 @@ I removed EIN and NAME because they are identification column
 
 ## Step 2: Compiling, Training, and Evaluating the Model
 First Hidden Layer: This layer has 80 neurons and uses the ReLU activation function. The ReLU activation function is a common choice for hidden layers as it helps the network learn complex patterns.
+
 Second Hidden Layer: This layer has 30 neurons and also uses the ReLU activation function.
+
 Output Layer: The output layer has 1 neuron and uses the sigmoid activation function.  The model is designed for binary classification tasks. The sigmoid activation function is commonly used for binary classification as it squashes the output into the range [0, 1], representing the probability of the positive class.
+
 I used binary_crossentropy for loss and adam for optimizer.
+
 <img width="647" alt="Screen Shot 2023-11-09 at 9 05 18 PM" src="https://github.com/leedthanh/deep-learning-challenge/assets/135544908/5d603ce0-584c-4e98-a530-74b041c0d996">
 
 The model produced an Accuracy: 0.7262973785400391 which is below the target performance of 75% accuracy that I hope to achieve.  Therefore I used an optimized model by changing the number of neuron and hidden layers to get my model target to 75%.  
 
+<img width="719" alt="Screen Shot 2023-11-09 at 9 06 09 PM" src="https://github.com/leedthanh/deep-learning-challenge/assets/135544908/d0a86e67-936f-4647-89c3-80e336c016e4">
+
 ## Step 3: Build an optimized model to improve accuracy rate
 
 I added another column feature NAME and increased another hidden layers to deepen the model neural network and as a result the optimized model produced an accuracy rate of 76% 
+
 Here are the details of the optimized model.
+
 First Hidden Layer: This layer has 30 neurons and uses the ReLU activation function. The ReLU activation function is a common choice for hidden layers as it helps the network learn complex patterns.
+
 Second Hidden Layer: This layer has 20 neurons and also uses the ReLU activation function.
 Third Hidden Layer:  This layer has 10 neurons and also uses the Relu activation function.
+
+<img width="633" alt="Screen Shot 2023-11-09 at 9 06 27 PM" src="https://github.com/leedthanh/deep-learning-challenge/assets/135544908/b087c4fc-54d8-41ec-8288-afd564ddd1ff">
+
 Output Layer: The output layer has 1 neuron and uses the sigmoid activation function.  The model is designed for binary classification tasks. The sigmoid activation function is commonly used for binary classification as it squashes the output into the range [0, 1], representing the probability of the positive class.  
+
+<img width="702" alt="Screen Shot 2023-11-09 at 9 06 46 PM" src="https://github.com/leedthanh/deep-learning-challenge/assets/135544908/9ee26274-c171-4aba-8a6e-59fe45b7d254">
+
+
 I used binary_crossentropy for loss and adam for optimizer also 100 epoch.
 
 # Summary
